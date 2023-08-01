@@ -10,14 +10,40 @@
 			'https://p.scdn.co/mp3-preview/ce4a01f9dc6091951d0a94b640b625b46e0efbd2?cid=774b29d4f13844c495f206cafdad9c86'
 	};
 </script>
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <svelte:head>
 	<title>Styleguide - ViBE</title>
 </svelte:head>
 
 <h1>Styleguide</h1>
 
-<section id="buttons">
+<div class="filterContainer">
+    <div class="filterHeader">
+        <div class="filterLogo">ViBE</div>
+        <div class="filterSelectButtons">
+			<button><span class="temp material-symbols-icons">instant_mix</span></button>
+            <button><span class="material-icons">tune</span></button>
+        </div>
+    </div>
+	<div class="filterBody">
+		<div class="filterOne">
+			<div class="searchBar">
+				
+			</div>
+		</div>
+		<!-- <div class="filterTwo">
+
+		</div> -->
+	</div>
+    <div class="filterButtons">
+		<button class="cancelButton"><span>nevermind</span></button>
+		<button class="submitButton"><span>submit</span></button>
+	</div>
+</div>
+
+
+
+<!-- <section id="buttons">
 	<h2>Buttons</h2>
 	<ul>
 		<li><button class="main">main button</button></li>
@@ -68,4 +94,4 @@
 	<ul>
 		<Card songDetails={x} />
 	</ul>
-</section>
+</section> -->
