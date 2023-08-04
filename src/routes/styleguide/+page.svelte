@@ -1,6 +1,8 @@
 <script>
 	import SearchButton from '../../components/SearchButton.svelte';
 	import Card from '../../components/Card.svelte';
+	import Slider from '../../components/utils/Slider/Slider.svelte';
+	import SearchBar from '../../components/SearchBar.svelte';
 	let x = {
 		songid: 'a',
 		title: 'Sample Song Title',
@@ -27,9 +29,7 @@
     </div>
 	<div class="filterBody">
 		<div class="filterOne">
-			<div class="searchBar">
-				
-			</div>
+			<SearchBar />
 		</div>
 		<!-- <div class="filterTwo">
 
@@ -44,6 +44,9 @@
 
 
 <!-- <section id="buttons">
+<SearchBar/>
+
+<section id="buttons">
 	<h2>Buttons</h2>
 	<ul>
 		<li><button class="main">main button</button></li>
